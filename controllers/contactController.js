@@ -46,7 +46,7 @@ const contactUs = asyncHandler(async (req, res) => {
   } catch (error) {
     res.status(500).json({ error: "Failed to save contact" });
   }
-});
+}); 
 
 const validateEmail = (email) => {
   return String(email)
